@@ -27,7 +27,7 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   var newArray = [];
-  for (var i ; i < array.length ; i++) {
+  for (var i = 0 ; i < array.length ; i++) {
     array[i]++;
     newArray.push(array[i])
   }
@@ -102,13 +102,13 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  var max = numeros [0];
-  for (var i = i ; i < numeros.length ; i++) {
-    if (numeros [i] > max) {
-      var max = numeros[i]
+  var max = 0;
+  for (var i = 0 ; i < numeros.length ; i++) {
+    if (numeros[i] > max) {
+      max = numeros[i]
     }
-    return max;
   }
+  return max;
 
 }
 
